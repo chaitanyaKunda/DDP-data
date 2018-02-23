@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+         <provider>org.hibernate.ejb.HibernatePersistence</provider> 
+        <class>com.agility.ddp.data.domain.DdpAedReqDocs</class>
+        <class>com.agility.ddp.data.domain.DdpAedRule</class>
+        <class>com.agility.ddp.data.domain.DdpAuditTxn</class>
+        <class>com.agility.ddp.data.domain.DdpBranch</class>
+        <class>com.agility.ddp.data.domain.DdpCategorizationHolder</class>
+        <class>com.agility.ddp.data.domain.DdpCategorizedAuditTxn</class>
+        <class>com.agility.ddp.data.domain.DdpCategorizedDetail</class>
+        <class>com.agility.ddp.data.domain.DdpCategorizedDocs</class>
+        <class>com.agility.ddp.data.domain.DdpCommEmail</class>
+        <class>com.agility.ddp.data.domain.DdpCommFtp</class>
+        <class>com.agility.ddp.data.domain.DdpCommOptionsLkp</class>
+        <class>com.agility.ddp.data.domain.DdpCommOptionsLkpPK</class>
+        <class>com.agility.ddp.data.domain.DdpCommOptionsSetup</class>
+        <class>com.agility.ddp.data.domain.DdpCommUnc</class>
+        <class>com.agility.ddp.data.domain.DdpCommunicationLkp</class>
+        <class>com.agility.ddp.data.domain.DdpCommunicationSetup</class>
+        <class>com.agility.ddp.data.domain.DdpCompany</class>
+        <class>com.agility.ddp.data.domain.DdpCompressionLkp</class>
+        <class>com.agility.ddp.data.domain.DdpCompressionSetup</class>
+        <class>com.agility.ddp.data.domain.DdpDmsDocProp</class>
+        <class>com.agility.ddp.data.domain.DdpDmsDocPropPK</class>
+        <class>com.agility.ddp.data.domain.DdpDmsDocsDetail</class>
+        <class>com.agility.ddp.data.domain.DdpDmsDocsHolder</class>
+        <class>com.agility.ddp.data.domain.DdpDmsDocsTxn</class>
+        <class>com.agility.ddp.data.domain.DdpDocnameConv</class>
+        <class>com.agility.ddp.data.domain.DdpDoctype</class>
+        <class>com.agility.ddp.data.domain.DdpEmailAttachment</class>
+        <class>com.agility.ddp.data.domain.DdpExportRule</class> 
+        <class>com.agility.ddp.data.domain.DdpGenSystem</class>
+        <class>com.agility.ddp.data.domain.DdpGroup</class>
+        <class>com.agility.ddp.data.domain.DdpGroupSetup</class>
+        <class>com.agility.ddp.data.domain.DdpIntegSystem</class>
+        <class>com.agility.ddp.data.domain.DdpJobRefHolder</class>
+        <class>com.agility.ddp.data.domain.DdpJobRefHolderPK</class>
+        <class>com.agility.ddp.data.domain.DdpMergeSetup</class>
+        <class>com.agility.ddp.data.domain.DdpNotification</class>
+        <class>com.agility.ddp.data.domain.DdpParty</class>
+        <class>com.agility.ddp.data.domain.DdpPmService</class>
+        <class>com.agility.ddp.data.domain.DdpProperties</class>
+        <class>com.agility.ddp.data.domain.DdpPropertiesPK</class>
+        <class>com.agility.ddp.data.domain.DdpRole</class>
+        <class>com.agility.ddp.data.domain.DdpRoleSetup</class>
+        <class>com.agility.ddp.data.domain.DdpRule</class>
+        <class>com.agility.ddp.data.domain.DdpRuleDetail</class>
+        <class>com.agility.ddp.data.domain.DdpRulePmSvc</class>
+        <class>com.agility.ddp.data.domain.DdpScheduler</class>
+        <class>com.agility.ddp.data.domain.DdpSourceSystem</class>
+        <class>com.agility.ddp.data.domain.DdpSourceSystemDetail</class>
+        <class>com.agility.ddp.data.domain.DdpUser</class>
+        <class>com.agility.ddp.data.domain.DdpValueAsst</class>
+        <class>com.agility.ddp.data.domain.DmsDdpSyn</class>
+        <class>com.agility.ddp.data.domain.Sysdiagrams</class> 
+        <class>com.agility.ddp.data.domain.DdpGenSourceLkp</class>
+        <class>com.agility.ddp.data.domain.DdpGenSourceSetup</class>
+        <class>com.agility.ddp.data.domain.DdpRate</class>
+        <class>com.agility.ddp.data.domain.DdpRateLkp</class>
+        <class>com.agility.ddp.data.domain.DdpRateSetup</class>
+        <class>com.agility.ddp.data.domain.DdpExportVersionLkp</class>
+        <class>com.agility.ddp.data.domain.DdpExportVersionSetup</class> 
+        <class>com.agility.ddp.data.domain.DdpMultiAedRule</class>     
+        <class>com.agility.ddp.data.domain.DdpEmailTriggerSetup</class>
+        <class>com.agility.ddp.data.domain.DdpExportMissingDocs</class>
+        <class>com.agility.ddp.data.domain.DdpExportSuccessReport</class>
+        <class>com.agility.ddp.data.domain.DdpMultiAedSuccessReport</class>
+        <class>com.agility.ddp.data.domain.DdpExportQuery</class>
+        <class>com.agility.ddp.data.domain.DdpExportQueryUi</class>
+        <class>com.agility.ddp.data.domain.DdpMultiEmails</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+            <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop" means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.DefaultNamingStrategy"/>
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <!-- Uncomment the following two properties for JBoss only -->
+            <property name="hibernate.validator.apply_to_ddl" value="false" />
+            <property name="hibernate.validator.autoregister_listeners" value="false" />
+            <property name="hibernate.jdbc.use_scrollable_resultset" value="false" />
+        </properties>
+    </persistence-unit>
+</persistence>
